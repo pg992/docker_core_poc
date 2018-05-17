@@ -1,0 +1,28 @@
+
+{
+    "region" : "us-east-1",
+    "profile" : "petar-gjeorgiev",
+    "configuration" : "Release",
+    "tag"           : "app:latest",
+    "cluster"       : "test",
+    "launch-type"   : "FARGATE",
+    "launch-subnets" : "subnet-463dbf0c,subnet-27e21c7b",
+    "launch-security-groups" : "sg-789e2030",
+    "assign-public-ip"       : true,
+    "task-definition-name"   : "App",
+    "task-cpu"               : "256",
+    "task-memory"            : "512",
+    "task-definition-task-role" : "arn:aws:iam::862573950006:role/ecsTaskExecutionRole",
+    "task-execution-role"       : "ecsTaskExecutionRole",
+    "container-name"            : "App",
+    "container-port-mapping"    : "80:80",
+    "container-environment-variables" : "\"ASPNETCORE_ENVIRONMENT\"=\"Production\"",
+    "skip-image-push"                 : false,
+    "cluster-service"                 : "App",
+    "desired-count"                   : 4,
+    "deployment-minimum-healthy-percent" : 50,
+    "deployment-maximum-percent"         : 200,
+    "elb-target-group"                   : "arn:aws:elasticloadbalancing:us-east-1:862573950006:targetgroup/EC2Co-Defau-FBL8GK7ORD5H/7664f40a483c75e7",
+    "elb-container-port"                 : 80,
+    "vstoolkit-deployment-mode"          : "DeployService"
+}

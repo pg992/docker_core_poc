@@ -12,4 +12,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Amazon.ECS.Tools" Version="1.1.4" />
+  </ItemGroup>
 </Project>
+
